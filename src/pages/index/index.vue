@@ -1,41 +1,38 @@
 <template>
   <view>
     <view>
-      <view class="u-flex user-box u-p-l-30 u-p-r-20 u-p-b-30">
+      <view class="u-flex user-box u-p-l-30 u-p-r-20 u-p-t-30 u-p-b-30">
         <view class="u-m-r-10">
-          <u-avatar :src="pic" size="140"></u-avatar>
+          <u-avatar :src="pic" size="140"/>
         </view>
         <view class="u-flex-1">
-          <view class="u-font-18 u-p-b-20">uView ui</view>
-          <view class="u-font-14 u-tips-color">微信号:helang_uView</view>
+          <view class="u-font-36 u-p-b-20">uView ui</view>
+          <view class="u-font-24 u-tips-color">微信号 123456789</view>
         </view>
         <view class="u-m-l-10 u-p-10">
-          <u-icon color="#969799" name="scan" size="28"></u-icon>
-        </view>
-        <view class="u-m-l-10 u-p-10">
-          <u-icon color="#969799" name="arrow-right" size="28"></u-icon>
+          <u-icon color="#969799" name="scan" size="48"/>
         </view>
       </view>
-      <view class="u-m-t-20">
+      <view class="u-m-b-30">
         <u-cell-group>
-          <u-cell-item icon="rmb-circle" title="支付"></u-cell-item>
+          <u-cell-item icon="rmb-circle" title="支付"/>
         </u-cell-group>
       </view>
-      <view class="u-m-t-20">
+      <view class="u-m-b-30">
         <u-cell-group>
-          <u-cell-item icon="star" title="收藏"></u-cell-item>
-          <u-cell-item icon="photo" title="相册"></u-cell-item>
-          <u-cell-item icon="coupon" title="卡券"></u-cell-item>
-          <u-cell-item icon="heart" title="关注"></u-cell-item>
+          <u-cell-item icon="star" title="收藏"/>
+          <u-cell-item icon="photo" title="相册"/>
+          <u-cell-item icon="coupon" title="卡券"/>
+          <u-cell-item icon="heart" title="关注"/>
         </u-cell-group>
       </view>
-      <view class="u-m-t-20">
+      <view class="u-m-b-30">
         <u-cell-group>
-          <u-cell-item icon="setting" title="设置"></u-cell-item>
+          <u-cell-item icon="setting" title="设置"/>
         </u-cell-group>
       </view>
     </view>
-    <u-tabbar v-model="current" :list="list" :mid-button="true"></u-tabbar>
+    <u-tabbar v-model="current" :list="list" :mid-button="true"/>
   </view>
 </template>
 
@@ -47,14 +44,15 @@ export default Vue.extend({
     return {
       pic: 'https://uviewui.com/common/logo.png',
       show: true,
-      list: [{
-        iconPath: "home",
-        selectedIconPath: "home-fill",
-        text: '首页',
-        count: 2,
-        isDot: true,
-        customIcon: false,
-      },
+      list: [
+        {
+          iconPath: "home",
+          selectedIconPath: "home-fill",
+          text: '首页',
+          count: 2,
+          isDot: true,
+          customIcon: false,
+        },
         {
           iconPath: "photo",
           selectedIconPath: "photo-fill",
@@ -81,7 +79,7 @@ export default Vue.extend({
           count: 23,
           isDot: false,
           customIcon: false,
-        },
+        }
       ],
       current: 0
     }
