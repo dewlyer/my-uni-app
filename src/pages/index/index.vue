@@ -98,11 +98,12 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 page {
   background-color: #ededed;
 }
-
+</style>
+<style lang="scss" scoped>
 .user-box {
   background-color: #fff;
 }
