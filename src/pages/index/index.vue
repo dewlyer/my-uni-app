@@ -32,7 +32,12 @@
         </u-cell-group>
       </view>
     </view>
-    <u-tabbar v-model="current" :list="list" :mid-button="true"/>
+    <u-tabbar v-model="current"
+              :list="list"
+              :bg-color="bgColor"
+              :active-color="activeColor"
+              :inactive-color="inactiveColor"
+              :mid-button="false"/>
   </view>
 </template>
 
@@ -81,7 +86,9 @@ export default Vue.extend({
           customIcon: false,
         }
       ],
-      current: 0
+      bgColor: '#333333',
+      activeColor: '#eeeeee',
+      inactiveColor: '#ffffff'
     }
   },
   onLoad() {
@@ -96,17 +103,7 @@ page {
   background-color: #ededed;
 }
 
-.camera {
-  width: 54px;
-  height: 44px;
-
-  &:active {
-    background-color: #ededed;
-  }
-}
-
 .user-box {
   background-color: #fff;
 }
-
 </style>
