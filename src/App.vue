@@ -3,6 +3,9 @@ import Vue from 'vue'
 
 export default Vue.extend({
   mpType: 'app',
+  globalData: {
+    appSubText: 'text'
+  },
   onLaunch() {
     console.log('App Launch')
   },
